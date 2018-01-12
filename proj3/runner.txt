@@ -1,0 +1,32 @@
+use jadrn012;
+
+drop table if exists runner;
+
+create table runner(
+	fname varchar(50) NOT NULL,
+	mname varchar(50),
+	lname varchar(50) NOT NULL,
+	address1 varchar(100) NOT NULL,
+	address2 varchar(100),
+	city varchar(40) NOT NULL,
+	states char(2) NOT NULL,
+	zip char(5) NOT NULL,
+	phone char(10) NOT NULL,
+	email varchar(80) NOT NULL,
+	gender varchar(8) NOT NULL,
+	b_month char(2) NOT NULL,
+	b_day char(2) NOT NULL,
+	b_year char(4) NOT NULL,
+	medical varchar(100),
+	experience char(14) NOT NULL,
+	category char(8) NOT NULL,
+	pic varchar(50) NOT NULL
+	);
+	
+INSERT INTO runner VALUES('Lola','','De Jesus','7890 Forrester st.','','San Diego','CA','92111','6198381988','ldj@gmail.com','female','06','25','1997','','Novice','Adult','Bamboo.jpg');
+INSERT INTO runner VALUES('Peter','','De Jesus','908 Rose st.','','San Diego','CA','92101','6198988867','pdj@gmail.com','male','12','12','1992','','Novice','Adult','Bamboo.jpg');
+INSERT INTO runner VALUES('Danielle','','Lawrence','777 lucky st.','apt 10','San Diego','CA','92082','8587889019','dlawrence@gmail.com','female','07','21','1998','','Novice','Teen','Bamboo.jpg');
+INSERT INTO runner VALUES('Ralph','','Maurice','8008 main st.','','San Diego','CA','92102','6198878900','rmo@gmail.com','male','08','17','1985','','Expert','Adult','Bamboo.jpg');
+INSERT INTO runner VALUES('Gracie','','Rose','1787 2nd ave','unit 208','San Diego','CA','92107','6199891234','gracer@gmail.com','female','10','19','1997','','Experienced','Teen','Bamboo.jpg');
+INSERT INTO runner VALUES('John','','Smith','123 house ave','','La mesa','CA','94567','6198781221','jsmith@hotmail.com','male','11','20','1997','','Novice','Teen','Bamboo.jpg');
+INSERT INTO runner VALUES('Tom','','Myers','8890 jackson ave','','Encinitas','CA','92790','8587578873','tmyers@yahoo.com','male','04','10','1948','','Expert','Senior','Bamboo.jpg');

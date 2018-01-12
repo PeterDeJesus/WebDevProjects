@@ -1,0 +1,64 @@
+* { 
+    margin: 0;
+    padding: 0;
+  }
+
+/* Code written by Peter De Jesus
+   Class account: jadrn012 */
+
+h1 { text-align: center; }
+div#signsheet {
+		border-radius: 25px;
+		padding: 25px 25px 35px 25px;
+		width: 450px;
+		height: 830px;
+		background-color: #F8ECC2;
+		<!--text-align: left;-->
+	}
+div#info_area {
+		text-align: left;
+	}
+
+body {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	background-color: rgb(100, 100, 100);
+	color: black;
+	font-size: 12pts;
+	}
+
+h1, h2 {
+	padding: 0px 10px 10px 10px;
+	color: white;
+	}
+
+h1 {
+	font-size: 300%;
+	}
+
+body div {
+	display: inline-block;
+	}
+
+#dob {
+	text-align: center;
+	display: inline;
+	}
+textarea {
+		max-width: 400px;
+		max-height: 100px;
+	}
+
+#submit {
+	text-align: center;
+	}
+
+p#req {
+	text-align: right;
+	}
+
+h3#status {
+	color: red;
+	text-align: center;
+	font-size: 150%;
+	}

@@ -1,0 +1,129 @@
+* {margin:0; padding:0}
+
+/*	Code written by Peter De Jesus
+	Class Account: jadrn012
+	CS545 Fall 2017, Project 4
+*/
+
+body {
+	background-color: rgb(233, 233, 233);
+	margin: 10px 25px 10px 25px;
+	padding: 0px 0px 25px 0px;
+	height: 100%;
+	}
+
+#counter {
+	text-align: right;
+	font-size: 20px;
+	}
+	
+.nameCo {
+	text-align: center;
+	font-size: 250%;
+	}
+	
+	
+#main {
+	/* change from left to right */
+	float: right;
+	width: 30%;
+	overflow: hidden;
+	background-color: #c68c53;
+	/*border-style: solid;
+	padding: 10px;*/
+	padding: 10px;
+	}
+	
+.cnfrm {
+	font-weight: bold;
+	font-size: 25px;
+	}
+
+/*	
+#paymentInfo {
+	float: left;
+	width: 70%;
+	overflow: hidden;
+	/*margin: 100px;
+	/*height: 100%;
+	}
+	*/
+	
+form {
+	float: left;
+	width: 60%;
+	overflow: hidden;
+	}
+	
+#sku {
+
+	width: 150px;
+	}
+	
+#qty {
+	width: 50px;
+	}
+	
+fieldset {
+	/*margin: 0px 100px 5px 100px;*/
+	padding: 10px 10px 10px 10px;
+	width: 90%;
+	background-color: rgb(242, 242, 242);
+	}
+	
+fieldset input, select {
+	margin: 5px;
+	padding: 10px;
+	font-size: medium;
+	}
+	
+legend {
+	font-weight: bold;
+	font-size: 20px;
+	}
+
+	
+#shipbox {
+	font-size: 20px;
+	}
+
+input#sameShipping {
+	width: 20px;
+	height: 20px;
+	}
+	
+#deleteButton, #quantityButton, #confirmbttn, #seeCartBttn {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+}
+
+#deleteButton:hover, #quantityButton:hover, #confirmbttn:hover, #seeCartBttn:hover {
+	background-color: #86592d;
+	color: white;
+	}
+
+#summarySection {
+	text-align: center;
+	padding: 1px;
+	}
+p { 
+	text-align: justify;
+	font-size: 15px;
+	 }
+	 
+a {
+	text-decoration: none;
+	border: 1px solid black;
+	font-size: 20px;
+	padding: 2px;
+	margin: 2px;
+	color: black;
+	}
+
+a:hover {
+	background-color: #86592d;
+	color: white;
+	}

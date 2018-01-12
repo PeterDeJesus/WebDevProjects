@@ -1,0 +1,10 @@
+use jadrn012;
+
+drop table if exists sales;
+
+create table sales(
+	date varchar(50) NOT NULL,
+	sku varchar(50) NOT NULL,
+	quantity int(50) NOT NULL);
+
+

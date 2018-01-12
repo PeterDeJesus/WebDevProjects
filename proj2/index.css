@@ -1,0 +1,68 @@
+* { margin:0; padding:0 }
+
+/* Code written by Peter De Jesus
+   Class Account: jadrn012 */
+
+body {
+	background-color: rgb(100, 100, 100);
+	padding: 15px 20px 15px 20px;
+	text-align: center;
+	font-size: 12pts;
+	}
+
+h1 {
+	font-size: 300%;
+	color: white;
+	}
+
+#aztec {
+	background-color: rgb(201, 14, 19);
+	margin: 15px 0px 15px 0px;
+	border-radius: 25px;
+	}
+
+p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 150%;
+	padding: 10px;
+	}
+
+#info {
+	background-color: rgb(200, 200, 200);
+	margin: 15px;
+	border-radius: 20px;
+	border-style: inset;
+	}
+
+li a:hover {
+	color: white;
+	}
+
+ul:hover {
+	border-style: inset;
+	}
+
+ul { 
+     border-radius: 20px;
+     list-style-type: none;
+     text-align: center;
+     //background-color: rgb(190, 20, 19);
+     background-color: red;
+     padding: 0;
+     margin: 0;
+     border-style: outset;	
+
+/* used for centering */
+     display: inline-block;
+
+     width: 200px 
+	}
+li a { text-decoration: none;
+       text-align: center;
+       color: black;
+       font-size: 200% }
+
+#reghere {
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	}

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Bertha's Deluxe Chocolates: Checkout</title>
+	<meta http-equiv="content-type" 
+		content="text/html" charset="utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />          
+
+    <link rel="stylesheet" type="text/css" href="checkout.css" />
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript" src="shopping_cart.js"></script>
+    <script type="text/javascript" src="checkout.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+        
+</head>
+
+
+<body>
+
+    <div id="counter">Your cart: <span id="count">0</span></div>
+	<h1 class="nameCo">Bertha's Deluxe Chocolates</h1>
+	<br>
+    
+    <div id="main">    
+        SKU: <input type="text" id="sku" />
+        Quantity: <input type="text" id="qty" /><br /><br />
+        <!--<input type="button" value="Add to Cart" id="addButton" class="btn"/>-->
+        <input type="button" value="Delete from Cart" id="deleteButton" />   
+        <input type="button" value="Change Quantity" id="quantityButton" /> 
+	<input type="button" value="Total Cost and Order Now" id="confirmbttn" />
+        <br /><br />
+        <h3>Order Summary</h3>                            		                                
+    	</p>        
+        <div id="cart"></div>
+	<div id="sampleTest"></div>
+    </div>  
+
+<!--<div id="sale"> Hey</div>-->
+
+<h2>Order Checkout</h2><hr />
+<div id="summarySection">
+<a href="order.html">Back To Order Products</a>
+<input type="button" value="Click To See Order Summary" id="seeCartBttn" />
+<p>Click "Total Cost and Order Now" to order now</p>
+<p>Enter SKU number of product and click "Delete From Cart" to remove the item</p>
+<p>Enter SKU number and Quantity and click "Change Quantity" to change quantity of the item</p>
+</div>
+<div id="paymentinfo">
+<br><h2>Order Form</h2>
+<h4>Please Complete the form below</h4>
+<!--<h3>Billing Address</h3>-->
+<form method="post" action="/perl/jadrn012/confirm.cgi">    
+    <fieldset><legend>Billing Information</legend>
+	First Name:
+    	<input type="text" name="bill_fname" size="25" />
+    	
+	Last Name:
+	<input type="text" name="bill_lname" size="25" />
+	<br>
+	Address 1:
+	<input type="text" name="bill_address1" 
+			placeholder="Street address, or P.O. Box" size="30" />
+	
+        Address 2:
+        <Input type="text" name="bill_address2" 
+			placeholder="Apt. no., Unit, etc" size="30" />
+        <br>
+        City:
+        <Input type="text" name="bill_city" size="20" />
+        State:
+        <Input type="text" name="bill_state" size="2" />
+        
+        
+        Zip:
+        <Input type="text" name="bill_zip" 
+			placeholder="5-digit zipcode" size="10" />           
+        <br>
+	
+	Phone Number:
+	<input type="text" name="bill_phone" 
+			placeholder="10-digit number(no spaces)" size="25" />
+
+    </fieldset>
+
+            <!--<p>&nbsp;</p>
+            <p>&nbsp;</p>-->
+
+    <div id="shippingForm">
+    <fieldset><legend>Shipping Information</legend>
+    	First Name: <input type="text" name="ship_fname" size="25" />
+	
+	Last Name: <input type="text" name="ship_lname" size="25" />
+	<br>
+	Address 1: <input type="text" name="ship_address1" 
+				placeholder="Street address or P.O. Box" size="30" />
+	
+	Address 2: <input type="text" name="ship_address2" 
+				placeholder="Apt. no., Unit, etc" size="30" />
+	<br>
+	City: <input type="text" name="ship_city" size="20" />
+	State: <input type="text" name="ship_state" size="2" />
+	
+	Zipcode: <input type="text" name="ship_zip" 
+				placeholder="5-digit zipcode" size="10" />
+	<br>
+	Phone Number: <input type="text" name="ship_phone" 
+				placeholder="10-digit number(no spaces)" size="25" />
+    </fieldset>
+    </div>
+        
+    <fieldset><legend>Payment Information</legend>
+	Payment Type:
+	<input type="radio" name="cardtype" value="Visa" />Visa
+	<input type="radio" name="cardtype" value="Mastercard" />Mastercard
+	<input type="radio" name="cardtype" value="Discover" />Discover
+	<input type="radio" name="cardtype" value="American Express" />American Express
+	
+	<br>
+	Card Number:
+	<input type="text" name="card_num" size="16" />
+	
+	Expiration Date:
+	<select id="dropdown" name="months">
+		<option value="default" selected>MM</option>
+		<option value="01">01</option>
+		<option value="02">02</option>
+		<option value="03">03</option>
+		<option value="04">04</option>
+		<option value="05">05</option>
+		<option value="06">06</option>
+		<option value="07">07</option>
+		<option value="08">08</option>
+		<option value="09">09</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+	</select>
+	<input type="text" name="expyear" placeholder="YYYY" size="5" />
+    </fieldset>
+    
+	<div id="shipbox">
+		<input id="sameShipping" type="checkbox" name="shipbill" 
+			value="sameShip">Shipping Information is the same as my Billing Information<br><br>
+	</div>
+	<h1 id="status">&nbsp;</h1>
+	
+        <input type="reset" class="cnfrm"/>
+        <input type="submit" class="cnfrm" value="Submit Order"/>
+	
+        <br /><br />
+     
+</form>       
+
+</div>
+
+<!--</div> -->
+<!--</div> -->
+</body>
+
+</html>
+
